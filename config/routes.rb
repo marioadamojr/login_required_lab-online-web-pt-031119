@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :secrets, only: [:new]
-
   get '/show', to: 'secrets#show'
   get '/login', to: 'sessions#new', as: 'login'
   get '/homepage', to: 'sessions#homepage'
