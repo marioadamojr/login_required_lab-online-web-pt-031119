@@ -2,7 +2,7 @@ class SecretsController < ApplicationController
   before_action :require_login
 
   def show
-    if current_user!
+    if !current_user
       redirect_to '/login' #login_path
   end
 
