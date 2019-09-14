@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   post '/create', to: 'sessions#create'
   post '/destroy', to: 'sessions#destroy'
 
-  root sessions#new'
+  root 'sessions#new'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
-  
